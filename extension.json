@@ -5,16 +5,16 @@
   "description": "An LSP and Tree Sitter extension for Gleam!",
   "version": "1.0",
   "categories": ["languages", "tasks"],
+  "bugs": "https://github.com/brettkolodny/gleam-nova/issues",
+  "repository": "https://github.com/brettkolodny/gleam-nova",
 
   "main": "main.js",
 
-  "activationEvents": [
-    "onWorkspaceContains:*.gleam"
-  ],
+  "activationEvents": ["onWorkspaceContains:*.gleam"],
 
   "entitlements": {
-      "process": true,
-      "filesystem": "readwrite"
+    "process": true,
+    "filesystem": "readwrite"
   },
 
   "taskTemplates": {
@@ -24,23 +24,23 @@
   },
 
   "config": [
-        {
-          "key": "gleam.language-server-path",
-          "title": "Language Server Path",
-          "type": "path",
-          "placeholder": "/usr/local/bin/example"
-        },
-        {
-          "key": "gleam.language-server-active",
-          "title": "Enable Language Server",
-          "type": "boolean",
-          "default": true
-        },
-        {
-          "key": "gleam.format-on-save",
-          "title": "Format project on save",
-          "type": "boolean",
-          "default": true
-        }
-      ]
+    {
+      "key": "gleam.language-server-path",
+      "title": "Language Server Path",
+      "type": "path",
+      "placeholder": "/usr/local/bin/example"
+    },
+    {
+      "key": "gleam.language-server-active",
+      "title": "Enable Language Server",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "key": "gleam.format-on-save",
+      "title": "Format project on save",
+      "type": "boolean",
+      "default": true
+    }
+  ]
 }
